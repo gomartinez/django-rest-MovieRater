@@ -21,7 +21,6 @@ class Movie(models.Model):
         else:
             return 0
 
-
 class Rating(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
